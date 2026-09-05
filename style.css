@@ -15,6 +15,39 @@ nav {
   width: fit-content;
 }
 
+.navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+  gap: 5px; 
+  padding: 5px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important; 
+}
+
+.custom-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out; 
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-bar:nth-child(2) {
+  opacity: 0; 
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
 div {
   width: auto;
 }

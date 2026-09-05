@@ -11,12 +11,10 @@
 
 <body data-bs-spy="scroll" data-bs-target="#mynavbar" data-bs-smooth-scroll="true" tabindex="0">
   <nav id="mynavbar" class="navbar navbar-expand-sm navbar-dark px-3 fixed-top" style="width: 100%;">
-    <div class="container">
+    <div class="container" id="navContainer">
       <a class="navbar-brand" href="#">My Logo</a>
-      <button class="navbar-toggler" style="width: fit-content;" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <nav class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto nav-pills">
           <li class="nav-item">
             <a class="nav-link" href="#portfolio">Portfolio</a>
@@ -31,7 +29,7 @@
             <a class="nav-link" href="#"><img style="width: 20px;" src="images/icons/mail.png" alt="..."></a>
           </li>
         </ul>
-      </div>
+      </nav>
     </div>
   </nav>
 
@@ -345,6 +343,7 @@
       </div>
     </div>
   </section>
-  <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js">
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
