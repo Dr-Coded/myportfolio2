@@ -62,14 +62,14 @@
     </div>
    
     <div class="container">
-      <div class=" d-lg-flex flex-row" style="width: 100%;">
+     <div class=" d-lg-flex flex-row" style="width: 100%;">
         <div class="container col-sm-12 col-lg-7">
           <img class="img.fluid" src="images/recentwork.png" style="width: 100%;">
         </div>
-        <div class="card col-sm-12 col-lg-5" style="width: 50% height: auto;">
-          <div class="card-body">
+        <div class="card col-sm-12 col-lg-5" style="width: fit; height: auto;">
+          <div class="card-body" style="width: auto;">
             <h3 class="card-title text-dark">Multi-Post Stories</h3>
-            <p class="card-text" id="post1" style="width: 100%;">A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+            <p class="card-text" id="post1" style="width: fit-content;">A daily selection of privately personalized reads; no accounts or sign-ups required. This has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
             <div>
               <ul class="p-0">
                 <button class="top">CSS</button>
@@ -77,7 +77,7 @@
                 <button class="top">Bootstrap</button>
                 <button class="top">Ruby</button>
               </ul>
-              <a class="btn" data-bs-toggle="modal" data-bs-target="#multi-post">See project</a>
+              <a class="btn see-project-btn" id="project0">See project</a>
             </div>
           </div>
         </div>
@@ -85,8 +85,8 @@
     </div>
   </section>
 
-  <div class="modal fade" id="multi-post" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-dialog">
+  <div id="modal-container" class="mps1">
+    <!-- <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title" id="modal-title">Multi-Post Stories</h3>
@@ -99,12 +99,12 @@
           <button class="btn" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
 
-  <div class="modal fade" id="art-printing" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-dialog">
+  <div id="modal-container">
+    <!-- <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title" id="modal-title">Profesional Art Printing Data More</h3>
@@ -117,11 +117,11 @@
           <button class="btn" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="modal fade" id="healthcare" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-dialog">
+  <div id="modal-container">
+    <!-- <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title" id="modal-title">Data Dashboard Healthcare</h3>
@@ -134,11 +134,11 @@
           <button class="btn" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
-  <div class="modal fade" id="website" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
-    <div class="modal-dialog">
+  <div id="modal-container">
+    <!-- <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title" id="modal-title">Website Portfolio</h3>
@@ -151,14 +151,14 @@
           <button class="btn" data-bs-dismiss="modal">Close</button>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 
   <br>
 
-  <section data-bs-spy="scroll" data-bs-target="#mynavbar" data-offset="0" id="portfolio">
+  <section data-bs-spy="scroll" data-bs-target="#mynavbar" data-offset="0">
     <div class="container">
-      <!--<div class="row">-->
+      <div class="row">
         <section class="row">
           <div class="col-12 col-md-6 col-lg-4">
             <div class="card" id="mps1">
@@ -171,7 +171,7 @@
                   <button class="tag">Ruby</button>
                 </div>
               </div>
-              <a class="btn hide w-100" data-bs-toggle="modal" data-bs-target="#art-printing">See project</a>
+              <a class="btn hide w-100 see-project-btn" id="project1">See project</a>
 
             </div>
           </div>
@@ -187,7 +187,7 @@
                   <button class="tag">Ruby</button>
                 </div>
               </div>
-              <a class="btn hide w-100" data-bs-toggle="modal" data-bs-target="#healthcare">See project</a>
+              <a class="btn hide w-100 see-project-btn" id="project2">See project</a>
             </div>
           </div>
 
@@ -202,7 +202,7 @@
                   <button class="tag">Ruby</button>
                 </div>
               </div>
-              <a class="btn hide w-100" data-bs-toggle="modal" data-bs-target="#website">See project</a>
+              <a class="btn hide w-100 see-project-btn" id="project3">See project</a>
             </div>
           </div>
        
@@ -217,7 +217,7 @@
                   <button class="tag">Ruby</button>
                 </div>
               </div>
-              <a class="btn hide w-100" data-bs-toggle="modal" data-bs-target="#art-printing">See project</a>
+              <a class="btn hide w-100 see-project-btn" id="project1">See project</a>
             </div>
           </div>
           
@@ -232,7 +232,7 @@
                   <button class="tag">Ruby</button>
                 </div>
               </div>
-              <a class="btn hide w-100" data-bs-toggle="modal" data-bs-target="#healthcare">See project</a>
+              <a class="btn hide w-100 see-project-btn" id="project2">See project</a>
             </div>
           </div>
 
@@ -247,11 +247,11 @@
                   <button class="tag">Ruby</button>
                 </div>
               </div>
-              <a class="btn hide w-100" data-bs-toggle="modal" data-bs-target="#website">See project</a>
+              <a class="btn hide w-100 see-project-btn" id="project3">See project</a>
             </div>
           </div>
         </section>
-     <!--</div>-->
+      </div>
     </div>
   </section>
     <br>
