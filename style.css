@@ -63,7 +63,7 @@ h1 {
 }
 
 .top {
-  background-color: none;
+  background-color: transparent;
   border: 2px;
 }
 
@@ -93,7 +93,7 @@ div.card {
 
 img {
   width: fit-content;
-  height: fit-content;
+  height: auto;
 }
 
 p.skill {
