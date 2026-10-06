@@ -1,0 +1,338 @@
+body {
+  position: relative;
+  height: auto;
+  margin: 0.001px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  color: rgba(9, 30, 66, 1);
+}
+
+nav {
+  background-color: rgba(62, 60, 60, 1);
+  width: fit-content;
+}
+
+.navbar-toggler {
+  border: none !important;
+  background: transparent !important;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 5px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.custom-bar {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-bar:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-bar:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .custom-bar:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+div {
+  width: auto;
+}
+
+h1 {
+  width: fit-content;
+  font-family: "crete round", serif;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+  color: rgba(255, 107, 0, 1);
+  margin: 0%;
+}
+
+.top {
+  background-color: transparent;
+  border: 2px;
+}
+
+h3.heading {
+  margin: 0%;
+  padding: 0%;
+}
+
+h3.card-title {
+  width: auto;
+  height: auto;
+  font-family: "crete round", serif;
+  line-height: 44px;
+  font-size: 32px;
+  color: #fff;
+}
+
+h3.head1 {
+  height: 90px;
+  margin-top: 120px;
+}
+
+div.card {
+  margin: 6px;
+  border: none;
+}
+
+img {
+  width: fit-content;
+  height: auto;
+}
+
+p.skill {
+  color: #fff;
+  font-size: 22px;
+  font-weight: inherit;
+  line-height: 42.67px;
+}
+
+.introduction {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  line-height: 32px;
+  color: #fff5e1;
+}
+
+p {
+  width: fit-content;
+  color: rgba(255, 255, 255, 1);
+  margin: 0%;
+  padding-bottom: 3%;
+}
+
+.section01 {
+  background-color: #1c1a19;
+  background-image: url(images/Illustration.png);
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-position-y: 60%;
+  gap: 12px;
+  z-index: 1;
+  background-position-x: 100%;
+  width: 100%;
+  padding: 0%;
+  height: auto;
+}
+
+li img {
+  height: 24px;
+  width: 24px;
+}
+
+h2.heading1 {
+  font-family: "crete round", serif;
+  font-size: 32px;
+  font-weight: inherit;
+  line-height: 44px;
+  color: rgba(9, 30, 66, 1);
+}
+
+.btn {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 3%;
+  color: #fff;
+  background-color: #ff6b00;
+  gap: 10px;
+  padding: 12px;
+  height: 48px;
+  border: none;
+}
+
+.btn:hover {
+  background-color: rgba(255, 245, 225, 1);
+  color: rgba(245, 88, 0, 1);
+  border: 1px solid rgba(245, 88, 0, 1);
+  padding: 12px;
+}
+
+.btn:active {
+  background-color: rgba(224, 83, 4, 1);
+  box-shadow: none;
+  color: rgba(255, 255, 255, 1);
+}
+
+button {
+  justify-items: center;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  padding: 8px 8px;
+  width: inherit;
+  height: auto;
+  margin: 0%;
+  text-align: center;
+  justify-self: center;
+}
+
+.tag {
+  background-color: rgba(255, 255, 255, 0.24);
+  border: none;
+  color: #fff;
+}
+
+.form-control::placeholder {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+p.comment {
+  font-weight: 600;
+  color: rgba(38, 38, 38, 1);
+}
+
+#mps1 {
+  background-image: url(images/background1.png);
+  background-size: cover;
+}
+
+#mps2 {
+  background-image: url(images/background2.png);
+  background-size: cover;
+}
+
+#mps3 {
+  background-image: url(images/background3.png);
+  background-size: cover;
+}
+
+#post {
+  color: rgba(9, 30, 66, 1);
+}
+
+#post1 {
+  color: rgba(9, 30, 66, 1);
+  width: auto;
+}
+
+.aboutme {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-image: url(images/illustration2.png);
+  background-size: 50%;
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-position-y: 20%;
+  background-position-x: 160%;
+  padding: 0% 24px;
+  padding-bottom: 30px;
+  background-color: rgba(28, 26, 25, 1);
+}
+
+h2#about_me {
+  font-family: "Crete Round", serif;
+  font-size: 72px;
+  font-weight: 400;
+  line-height: 81.5px;
+  letter-spacing: 0%;
+  color: rgba(245, 88, 0, 1);
+}
+
+p.about_me {
+  font-size: 20px;
+  font-family: inherit;
+  line-height: 32px;
+}
+
+.textarea:focus {
+  background-color: rgba(251, 248, 247, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .hide {
+    display: none;
+  }
+
+  #mps1:hover {
+    background-image: url(images/background01.png);
+    background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+    cursor: pointer;
+    height: auto;
+
+    .mps {
+      visibility: hidden;
+    }
+
+    .tags {
+      display: none;
+    }
+
+    .hide {
+      display: block;
+    }
+  }
+
+  #mps2 {
+    background-image: url(images/background2.png);
+    background-size: cover;
+  }
+
+  #mps2:hover {
+    background-image: url(images/background02.png);
+    background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+    cursor: pointer;
+
+    .mps {
+      visibility: hidden;
+    }
+
+    .tags {
+      display: none;
+    }
+
+    .hide {
+      display: block;
+    }
+  }
+
+  #mps3 {
+    background-image: url(images/background3.png);
+    background-size: cover;
+  }
+
+  #mps3:hover {
+    background-image: url(images/background03.png);
+    background-size: cover;
+    border: 2px solid rgba(9, 30, 66, 1);
+    cursor: pointer;
+
+    .mps {
+      visibility: hidden;
+    }
+
+    .tags {
+      display: none;
+    }
+
+    .hide {
+      display: block;
+    }
+  }
+
+  .card-body {
+    width: fit-content;
+    border: none;
+  }
+}
