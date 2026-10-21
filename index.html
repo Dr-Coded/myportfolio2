@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html="en">
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,19 +10,26 @@
 
 
   <body>
-    <header>
-      <span class="menu">
-        <a href="#logo"><img class="logo" src="images/logo.png" alt="Dr. Code logo"></a>
-        <div class="nav">
+      <header>
+      <nav class="menu">
+        <a href="#logo" class="logo">MY LOGO</a>
+        <div class="desktop-items">
+          <a href="#portfolio"><span class="item">Portfolio</span></a>
+          <a href="#aboutme"><span class="item">About</span></a>
+          <a href="#contact"><span class="item">Contact</span></a>
+          <a href="mailto:doctorcode01@gmail.com"><img class="mail-icon" src="images/icons/mail.png" alt="Email"></a>
+        </div>
+
+        <div class="nav-menu" id="navMenu">
           <div class="items">
-            <a href="#portfolio"><p class="item">portfolio</p></a>
-            <a href="#aboutme"><p class="item">About</p></a>
-            <a href="#contact"><p class="item">Contact</p></a>
-            <a href="doctorcode01@gmail.com"><img class="item" src="images/icons/mail.png" alt="mail-icon"></a>
+            <a href="#portfolio"><p class="item item-text">Portfolio</p></a>
+            <a href="#aboutme"><p class="item item-text">About</p></a>
+            <a href="#contact"><p class="item item-text">Contact</p></a>
           </div>
         </div>
-        <a href="#"><img class="menu_button" src="images/menu_button.png" alt="menu button"></a>
-      </span>
+
+        <button type="button" class="menu_button" id="menuBtn" aria-label="Open menu" aria-expanded="false"></button> 
+      </nav>
     </header>
 
     <section class="section01" id="logo">
@@ -58,14 +65,14 @@
               <img class="workimg" src="images/recentwork.png" alt="work overview">
               <div class="post">
                 <h3 class="heading1">Multi-Post Stories</h3>
-                <p class="writeup1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                <text class="tags">
+                <p class="writeup1">A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy div ever since the 1500s, when an unknown printer took a standard dummy div.</p>
+                <div class="tags">
                   <span class="tag">CSS</span>
                   <span class="tag">HTML</span>
                   <span class="tag">Bootstrap</span>
                   <span class="tag">Ruby</span>
-                </text>
-                <a href="#"><button class="mainbttn">See Project</button></a>
+                </div>
+                <button class="mainbttn" id="project0">See Project</button>
               </div>
             </div>
           </main>
@@ -76,13 +83,13 @@
             <div class="mps">
               <h3 class="head">Professional Art <br> Printing Data</h3>
               <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-              <text class="tags">
-              <button class="tag" id="tag">HTML</button>
-              <button class="tag" id="tag">Bootstrap</button>
-              <button class="tag" id="tag">Ruby</button>
-              </text>
+              <div class="tags">
+                <button class="tag" id="tag">HTML</button>
+                <button class="tag" id="tag">Bootstrap</button>
+                <button class="tag" id="tag">Ruby</button>
+              </div>
             </div>
-            <button class="button_1">See Project</button>
+            <button class="button_1" id="project1">See Project</button>
           </main>
         </article> 
 
@@ -91,13 +98,13 @@
             <div class="mps">
               <h3 class="head">Professional Art <br> Printing Data</h3>
               <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-              <text class="tags">
-              <button class="tag" id="tag">HTML</button>
-              <button class="tag" id="tag">Bootstrap</button>
-              <button class="tag" id="tag">Ruby</button>
-              </text>
+              <div class="tags">
+                <button class="tag" id="tag">HTML</button>
+                <button class="tag" id="tag">Bootstrap</button>
+                <button class="tag" id="tag">Ruby</button>
+              </div>
             </div>
-            <button class="button_1">See Project</button>
+            <button class="button_1" id="project2">See Project</button>
           </main>
         </article> 
 
@@ -106,13 +113,13 @@
             <div class="mps">
               <h3 class="head">Professional Art <br> Printing Data</h3>
               <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-              <text class="tags">
-              <button class="tag" id="tag">HTML</button>
-              <button class="tag" id="tag">Bootstrap</button>
-              <button class="tag" id="tag">Ruby</button>
-              </text>
+              <div class="tags">
+                <button class="tag" id="tag">HTML</button>
+                <button class="tag" id="tag">Bootstrap</button>
+                <button class="tag" id="tag">Ruby</button>
+              </div>
             </div>
-            <button class="button_1">See Project</button>
+            <button class="button_1" id="project3">See Project</button>
           </main>
         </article> 
 
@@ -121,13 +128,13 @@
             <div class="mps">
               <h3 class="head">Professional Art <br> Printing Data</h3>
               <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-              <text class="tags">
-              <button class="tag" id="tag">HTML</button>
-              <button class="tag" id="tag">Bootstrap</button>
-              <button class="tag" id="tag">Ruby</button>
-              </text>
+              <div class="tags">
+                <button class="tag" id="tag">HTML</button>
+                <button class="tag" id="tag">Bootstrap</button>
+                <button class="tag" id="tag">Ruby</button>
+              </div>
             </div>
-            <button class="button_1">See Project</button>
+            <button class="button_1" id="project1">See Project</button>
           </main>
         </article> 
 
@@ -136,13 +143,13 @@
             <div class="mps">
               <h3 class="head">Professional Art <br> Printing Data</h3>
               <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-              <text class="tags">
-              <button class="tag" id="tag">HTML</button>
-              <button class="tag" id="tag">Bootstrap</button>
-              <button class="tag" id="tag">Ruby</button>
-              </text>
+              <div class="tags">
+                <button class="tag" id="tag">HTML</button>
+                <button class="tag" id="tag">Bootstrap</button>
+                <button class="tag" id="tag">Ruby</button>
+              </div>
             </div>
-            <button class="button_1">See Project</button>
+            <button class="button_1" id="project2">See Project</button>
           </main>
         </article> 
 
@@ -151,13 +158,13 @@
             <div class="mps">
               <h3 class="head">Professional Art <br> Printing Data</h3>
               <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-              <text class="tags">
-              <button class="tag" id="tag">HTML</button>
-              <button class="tag" id="tag">Bootstrap</button>
-              <button class="tag" id="tag">Ruby</button>
-              </text>
+              <div class="tags">
+                <button class="tag" id="tag">HTML</button>
+                <button class="tag" id="tag">Bootstrap</button>
+                <button class="tag" id="tag">Ruby</button>
+              </div>
             </div>
-            <button class="button_1">See Project</button>
+            <button class="button_1" id="project3">See Project</button>
           </main>
         </article> 
       </section> 
@@ -169,13 +176,13 @@
                 <div class="mps">
                   <h3 class="head1" >Professional Art <br> Printing Data</h3>
                   <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <text class="tags">
-                  <button class="tag" id="tag">HTML</button>
-                  <button class="tag" id="tag">Bootstrap</button>
-                  <button class="tag" id="tag">Ruby</button>
-                  </text>
+                  <div class="tags">
+                    <button class="tag" id="tag">HTML</button>
+                    <button class="tag" id="tag">Bootstrap</button>
+                    <button class="tag" id="tag">Ruby</button>
+                  </div>
                 </div>
-                <button class="button_1">See Project</button>
+                <button class="button_1" id="project1">See Project</button>
               </main>
             </article>
           
@@ -185,13 +192,13 @@
                 <div class="mps">
                   <h3 class="head1">Data Dashboard<br>Healthcare</h3>
                   <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <text class="tags">
-                  <button class="tag" id="tag">HTML</button>
-                  <button class="tag" id="tag">Bootstrap</button>
-                  <button class="tag" id="tag">Ruby</button>
-                  </text>
+                  <div class="tags">
+                    <button class="tag" id="tag">HTML</button>
+                    <button class="tag" id="tag">Bootstrap</button>
+                    <button class="tag" id="tag">Ruby</button>
+                  </div>
                 </div>
-                <button class="button_1">See Project</button>
+                <button class="button_1" id="project2">See Project</button>
               </main>
             </article> 
 
@@ -200,13 +207,13 @@
                 <div class="mps">
                   <h3 class="head1">Website Portfolio </h3>
                   <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <text class="tags">
-                    <button class="tag" id="tag">HTML</button>
-                    <button class="tag" id="tag">Bootstrap</button>
-                    <button class="tag" id="tag">Ruby</button>
-                  </text>
+                  <div class="tags">
+                      <button class="tag" id="tag">HTML</button>
+                      <button class="tag" id="tag">Bootstrap</button>
+                      <button class="tag" id="tag">Ruby</button>
+                  </div>
                 </div>
-                <button class="button_1">See Project</button>
+                <button class="button_1" id="project3">See Project</button>
               </main>
             </article>
 
@@ -217,13 +224,13 @@
                 <div class="mps">
                   <h3 class="head1">Professional Art <br> Printing Data</h3>
                   <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <text class="tags">
+                  <div class="tags">
                   <button class="tag" id="tag">HTML</button>
                   <button class="tag" id="tag">Bootstrap</button>
                   <button class="tag" id="tag">Ruby</button>
-                  </text>
+                  </div>
                 </div>
-                <button class="button_1">See Project</button>
+                <button class="button_1" id="project1">See Project</button>
               </main>
             </article>
 
@@ -232,13 +239,13 @@
                 <div class="mps">
                   <h3 class="head1">Data Dashboard<br>Healthcare</h3>
                   <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <text class="tags">
+                  <div class="tags">
                   <button class="tag" id="tag">HTML</button>
                   <button class="tag" id="tag">Bootstrap</button>
                   <button class="tag" id="tag">Ruby</button>
-                  </text>
+                  </div>
                 </div>
-                <button class="button_1">See Project</button>
+                <button class="button_1" id="project2">See Project</button>
               </main>
             </article> 
 
@@ -247,13 +254,13 @@
                 <div class="mps">
                   <h3 class="head1">Website Portfolio </h3>
                   <p class="writeup2">A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry's standard.</p>
-                  <text class="tags">
+                  <div class="tags">
                     <button class="tag" id="tag">HTML</button>
                     <button class="tag" id="tag">Bootstrap</button>
                     <button class="tag" id="tag">Ruby</button>
-                  </text>
+                  </div>
                 </div>
-                <button class="button_1">See Project</button>
+                <button class="button_1" id="project3">See Project</button>
               </main>
             </article>
           </div>
@@ -261,17 +268,17 @@
     </section>
 
     <section class="aboutme" id="aboutme">
-      <container class="all1">
+      <div class="all1">
         <h2 class="about_me">About me</h2>
         <p class="write-up">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
         <button class="resume">Get my Resume</button>
-      </container>
+      </div>
 
       <img class="breakln01" src="images/break-line.png" alt="break-line">
 
-      <container class="all2">
+      <div class="all2">
         
-        <section class="sect">
+        <div class="sect">
           <aside>
             <img class="s_icon1" src="images/icons/Rectangle.png">
             <h3 class="heading">Language</h3>
@@ -283,9 +290,9 @@
             <h4 class="skill">CSS</h4>
           </aside>
 
-        </section>
+        </div>
 
-        <section class="sect">
+        <div class="sect">
           <aside>
             <img class="s_icon" src="images/icons/square.png">
             <h3 class="heading">Frameworks</h3>
@@ -298,9 +305,9 @@
               <h4 class="skill">Capybara</h4>
             </aside>
             
-        </section>
+        </div>
 
-        <section class="sect">
+        <div class="sect">
           <aside>
             <img class="s_icon" src="images/icons/circle.png">
             <h3 class="heading">Skills</h3>
@@ -314,8 +321,8 @@
             <h4 class="skill">Web Development</h4>
           </aside>
 
-        </section>
-      </container>
+        </div>
+      </div>
     </section>
     
     <section class="contact" id="contact">
@@ -323,15 +330,15 @@
 
       <form action="https://formspree.io/f/mvzlkybp" method="post">
         <label class="info">
-          <input class="text" type="text" id="name" name="full name" placeholder="Full Name" required minlength="4" maxlength="30">
+          <input class="div" type="div" id="name" name="full name" placeholder="Full Name" required minlength="4" maxlength="30">
         </label>
 
         <label class="info">
-          <input class="text" type="email" id="mail" name="email address" placeholder="Email Address" required>
+          <input class="div" type="email" id="mail" name="email address" placeholder="Email Address" required>
         </label>
 
         <label class="info">
-          <textarea class="textarea" type="text" name="details" placeholder="Write me something..." required minlength="100" maxlength="500"></textarea>
+          <divarea class="divarea" type="div" name="details" placeholder="Write me something..." required minlength="100" maxlength="500"></divarea>
         </label>
 
         <p class="button_2">
@@ -353,5 +360,9 @@
       <p class="last"> </p>
     </section>
 
+    <section id="section00">
+      <div class="post" id="modal-container"></div>
+    </section>
+    <script src="script.js"></script>
   </body>
 </html>
