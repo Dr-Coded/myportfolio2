@@ -68,6 +68,7 @@ function closeModal() {
   if (modalOverlay) {
     modalOverlay.remove();
   }
+  document.body.classList.remove('modal-open');
 }
 
 function openModal(projectId) {
@@ -76,6 +77,8 @@ function openModal(projectId) {
 
   const modalContainer = document.getElementById('section00');
   if (!modalContainer) return;
+
+  document.body.classList.add('modal-open');
 
   const techList = project.technologies
     .map((tech) => `<span class='teg'>${tech}</span>`)
@@ -92,13 +95,13 @@ function openModal(projectId) {
         <div class='modal-body'>
           <img src='${project.featuredImage}' class='workimg' alt='${project.name}'>
           <div class='modal-content-text'>
-            <p class=''>${project.description}</p>
+            <p>${project.description}</p>
             <div class="popup-buttons">
               <button class="live" href="${project.liveLink}" target="_blank">
                 <p class="texts">See Live</p>
                 <img class="live" src="images/icons/live.png" alt="live_icon">
               </button>
-              <button class="live" id="" href="${project.sourceLink}" target="_blank">
+              <button class="live" href="${project.sourceLink}" target="_blank">
                 <p class="texts">See Source</p>
                 <img class="live" src="images/icons/source.png" alt="source_icon">
               </button>
@@ -110,7 +113,11 @@ function openModal(projectId) {
   `;
 
   modalContainer.innerHTML = modalHTML;
-  document.getElementById('close-modal-btn').addEventListener('click', closeModal);
+
+  document.getElementById('close-modal-btn').addEventListener('click', (event) => {
+    event.preventDefault();
+    closeModal();
+  });
 
   document.getElementById('modal-overlay').addEventListener('click', (event) => {
     if (event.target.id === 'modal-overlay') {
@@ -122,6 +129,7 @@ function openModal(projectId) {
 document.addEventListener('click', (event) => {
   const button = event.target.closest('.mainbttn, .button_1');
   if (button) {
+    event.preventDefault();
     const projectId = button.id;
     openModal(projectId);
   }
