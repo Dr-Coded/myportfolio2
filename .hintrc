@@ -1,0 +1,40 @@
+{
+  "connector": {
+    "name": "local",
+    "options": {
+      "pattern": [
+        "**",
+        "!node_modules/**",
+        "!.git/**"
+      ]
+    }
+  },
+  "extends": [
+    "development"
+  ],
+  "formatters": [
+    "summary",
+    "stylish"
+  ],
+  "hints": {
+    "axe/color": "error",
+    "axe/forms": "warning",
+    "axe/heading-order": "warning",
+    "axe/image-alt": "error",
+    "axe/label": "warning",
+    "button-type": "error",
+    "compat-api/html": "error",
+    "disown-opener": "error",
+    "html/valid-lang": "error",
+    "meta-charset-utf-8": "error",
+    "meta-viewport": "error",
+    "no-inline-styles": "warning",
+    "no-protocol-relative-urls": "error",
+    "sri": "error",
+    "manifest-is-valid": "warning",
+    "http-cache": "warning",
+    "no-disallowed-headers": "error",
+    "meta-description": "warning",
+    "meta-theme-color": "warning"
+  }
+}
