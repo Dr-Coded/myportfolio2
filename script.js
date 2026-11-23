@@ -283,7 +283,7 @@ function renderProjects() {
   const remainingContainer = isDesktop ? desktopContainer : mobileContainer;
   if (remainingContainer) remainingContainer.innerHTML = '';
 
-  Object.entries(activeProjects).forEach(([project], index) => {
+  Object.entries(activeProjects).forEach(([, project], index) => {
     const techList = project.technologies
       .map((tech) => `<span class='tag'>${tech}</span>`)
       .join('');
