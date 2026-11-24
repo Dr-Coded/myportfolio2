@@ -1225,7 +1225,7 @@ p.last {
     margin-left: 9%;
     width: fit-content;
   }
-  
+
   .grid02 {
     display: grid;
     grid-template-columns: 1fr 1fr;
