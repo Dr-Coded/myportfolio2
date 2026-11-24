@@ -1249,7 +1249,7 @@ p.last {
   }
 
   .modal-header {
-    height: 40px;
+    height: fit-content;
   }
 
   .modal-title {
