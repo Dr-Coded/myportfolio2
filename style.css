@@ -811,11 +811,6 @@ p.last {
     width: 100%;
   }
 
-  .logo {
-    margin-left: 9%;
-    width: fit-content;
-  }
-
   header {
     width: 100%;
     align-items: center;
@@ -1226,6 +1221,11 @@ p.last {
 }
 
 @media (min-width: 595px) {
+  .logo {
+    margin-left: 9%;
+    width: fit-content;
+  }
+  
   .grid02 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -1235,6 +1235,20 @@ p.last {
 
   h3.head1 {
     height: 120px;
+  }
+
+  .modal-header {
+    height: fit-content;
+  }
+
+  .modal-title {
+    font-family: "crete round", serif;
+    font-weight: 400;
+    height: fit-content;
+  }
+
+  .section02 {
+    padding-bottom: 0%;
   }
 }
 
