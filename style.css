@@ -713,7 +713,7 @@ textarea {
   padding-left: 5%;
 }
 
-p.info {
+p.form {
   margin: 0%;
 }
 
@@ -752,6 +752,14 @@ textarea {
   justify-items: center;
   margin: 0.001px;
   width: fit-content;
+}
+
+label.mail {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  font-style: italic;
+  color: #091e42;
 }
 
 button.submit {
@@ -809,11 +817,6 @@ p.last {
 @media (min-width: 768px) {
   body {
     width: 100%;
-  }
-
-  .logo {
-    margin-left: 9%;
-    width: fit-content;
   }
 
   header {
@@ -978,9 +981,8 @@ p.last {
 
   .section02 {
     gap: 20px;
-    width: 80%;
+    width: 90%;
     margin: 0% 50px;
-    padding: 130px 24px;
   }
 
   ul {
@@ -1226,15 +1228,34 @@ p.last {
 }
 
 @media (min-width: 595px) {
+  .logo {
+    margin-left: 9%;
+    width: fit-content;
+  }
+
   .grid02 {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: e1fr 1fr;
     max-width: auto;
     gap: 24px;
   }
 
   h3.head1 {
     height: 120px;
+  }
+
+  .section02 {
+    padding-bottom: 0%;
+  }
+
+  .modal-header {
+    height: 40px;
+  }
+
+  .modal-title {
+    font-family: "crete round", serif;
+    font-weight: 400;
+    height: auto;
   }
 }
 

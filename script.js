@@ -30,7 +30,7 @@ const projects = [
     name: 'Multi-Post Stories',
     description: "'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
     featuredImage: 'images/snapshoot.png',
-    technologies: ['CSS', 'HTML', 'Bootstrap', 'Ruby'],
+    technologies: ['HTML', 'Bootstrap', 'Ruby on rails'],
     liveLink: 'https://dr-coded.github.io/portfolio/',
     sourceLink: 'https://github.com/Dr-Coded/portfolio2',
   },
@@ -353,3 +353,47 @@ document.addEventListener('DOMContentLoaded', () => {
     renderProjects();
   });
 });
+
+const form = document.querySelector('form');
+const email = document.getElementById('mail');
+const emailError = document.getElementById('errorMsg');
+
+function showError() {
+  if (!email || !emailError) return;
+
+  if (email.validity.patternMismatch) {
+    emailError.textContent = 'Email must contain lowercase only.';
+  } else if (email.validity.typeMismatch) {
+    emailError.textContent = 'Incorrect Email Address';
+  } else if (email.validity.valueMissing) {
+    emailError.textContent = 'Please, type in your correct email address.';
+  }
+  emailError.className = 'error active';
+}
+
+// eslint-disable-next-line no-unused-vars
+function clearError() {
+  if (!emailError) return;
+  emailError.textContent = '';
+  emailError.className = 'error';
+}
+
+if (email && emailError) {
+  email.addEventListener('input', () => {
+    if (email.validity.valid) {
+      emailError.textContent = '';
+      emailError.className = 'error';
+    } else {
+      showError();
+    }
+  });
+}
+
+if (form && email) {
+  form.addEventListener('submit', (event) => {
+    if (!email.validity.valid) {
+      showError();
+      event.preventDefault();
+    }
+  });
+}

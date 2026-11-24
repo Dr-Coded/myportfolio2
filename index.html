@@ -132,21 +132,21 @@
       <p class="comment">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
 
       <form action="https://formspree.io/f/mvzlkybp" method="post">
-        <label class="info">
-          <input class="div" type="div" id="name" name="full name" placeholder="Full Name" required minlength="4" maxlength="30">
+        <label class="form">
+          <input class="name" type="text" id="name" name="full name" placeholder="Full Name *" required minlength="4" maxlength="30" required>
         </label>
 
-        <label class="info">
-          <input class="div" type="email" id="mail" name="email address" placeholder="Email Address" required>
+        <label class="form">
+          <input class="mail" type="email" id="mail" name="email address" placeholder="Email Address *" required pattern="[a-z0-9._%\+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" novalidate>
         </label>
 
-        <label class="info">
-          <divarea class="divarea" type="div" name="details" placeholder="Write me something..." required minlength="100" maxlength="500"></divarea>
+        <label class="form">
+          <textarea name="details" placeholder="Write me something... " required minlength="10" maxlength="500"></textarea>
         </label>
 
-        <p class="button_2">
-          <button class="lastbttn" type="submit">Get in touch</button>
-        </p>
+        <label class="mail">
+          <p class="button_2"><button class="lastbttn" type="submit">Get in touch</button></p><span id="errorMsg" aria-live="polite"></span>
+        </label>
           
       </form>
     </section>
